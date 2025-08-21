@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>8 - Hidden Input Trap</title>
+</head>
+<body>
+  <p>This form includes hidden fields. Submission uses GET so the hidden values appear in the URL and are echoed by the remote test endpoint.</p>
+  <form action="https://httpbin.org/get" method="get" target="_blank">
+    <input type="hidden" name="secret" value="myHiddenValue123">
+    <input type="hidden" name="token" value="token-xyz">
+    <label>Visible name: <input name="name" type="text" value="Alice"></label>
+    <br>
+    <input type="submit" value="Submit (to show hidden values)">
+  </form>
+</body>
+</html>

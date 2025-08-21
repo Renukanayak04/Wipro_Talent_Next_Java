@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>6 - Clickable Image Map (Overlapping)</title>
+  <style>img { max-width:500px; height:auto; }</style>
+</head>
+<body>
+  <p>Click zones are defined below. Two zones overlap in the center.</p>
+  <img src="https://via.placeholder.com/500x300?text=Map+Image" usemap="#mymap" alt="map">
+
+  <map name="mymap">
+    <area shape="rect" coords="0,0,250,300" href="https://example.com/left" alt="left">
+    <area shape="rect" coords="150,0,500,300" href="https://example.org/right" alt="right">
+  </map>
+</body>
+</html>

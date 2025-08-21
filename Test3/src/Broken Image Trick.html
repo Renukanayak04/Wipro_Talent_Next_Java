@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>3 - Broken Image Trick</title>
+  <style>
+    .dark-only { display:none; }
+    @media (prefers-color-scheme: dark) {
+      .dark-only { display:inline-block; }
+    }
+    img { max-width:200px; display:block; margin:8px 0; }
+  </style>
+</head>
+<body>
+  <h2>Normal image</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Example.jpg/320px-Example.jpg" alt="normal image">
+
+  <h2>Broken image</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/this-does-not-exist.png" alt="broken image">
+
+  <h2>Dark-mode-only image</h2>
+  <img class="dark-only" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Wikipedia-logo-standard.png/320px-Wikipedia-logo-standard.png" alt="dark mode image">
+</body>
+</html>
